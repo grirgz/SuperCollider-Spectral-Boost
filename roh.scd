@@ -32,17 +32,6 @@ SynthDef(\DSBMONO, {
 Synth(\DSBMONO, [\buf, ~music]);
 
 
-//TO RECORD
-
-Synth(\DSBMONO, [\buf, ~music]);
-
-
-//TO RECORD
-
-(
-s.recSampleFormat = "int16"; //Specifing to record the audio file in 16bit
-Synth(\DSBMONO, [\buf, ~music]);
-
 
 //TO RECORD
 
