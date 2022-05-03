@@ -37,6 +37,6 @@ Synth(\DSBMONO, [\buf, ~music]);
 
 (
 s.recSampleFormat = "int16"; //Specifing to record the audio file in 16bit
-soooooooooooooooo = "wav"; // Specifing to record the audio file in waxv fxormat
+soooooooooooooooo = "wav"; // Spexcifing to recxord the audxio fixle in waxv fxormat
 )
 
