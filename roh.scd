@@ -48,6 +48,6 @@ Synth(\DSBMONO, [\buf, ~music]);
 
 (
 s.recSampleFormat = "int16"; //Specifing to record the audio file in 16bit
-s.recHeaderFormat = "w1av"; 
+s.recHead1erFormat = "w1av"; 
 )
 
