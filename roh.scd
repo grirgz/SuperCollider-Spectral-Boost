@@ -28,25 +28,5 @@ SynthDef(\DSBMONO, {
 }).add;
 )
 
-Synth(\DSBMONO, [\buf, ~music]);
 
 
-//TO RECORD
-
-(
-s.recSampleFormat = "int16"; //Specifing to record the audio file in 16bit
-s.recHeaderFormat = "wav"; //Specifing to record the audio file in wav format
-)
-
-(
-Routine({
-	s.prepareForRecord(numChannels: 1); //numChannels set to 1 to get mono
-	s.sync;
-	s.record(duration:64); //Specified in seconds
-	x = Synth(\DSBMONO, [\buf, ~music]);
-}).play;
-)
-
-s.stopRecording; //To force stop the recording
-
-Platform.recordingsDir;//To check where the recorded file saves on the directory
