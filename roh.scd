@@ -29,4 +29,12 @@ SynthDef(\DSBMONO, {
 )
 
 
+Synth(\DSBMONO, [\buf, ~music]);
 
+
+//TO RECORD
+
+(
+s.recSampleFormat = "int16"; //Specifing to record the audio file in 16bit
+s.recHeaderFormat = "wav"; //Specifing to record the audio file in wav format
+)
